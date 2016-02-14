@@ -9,66 +9,30 @@ namespace ConsoleApplication2
 {
     class Program
     {
+        private static long _counter;
+        private static object o = new object();
+
         static void Main(string[] args)
         {
+            var ct1 = new Thread(Increment);
+            var ct2 = new Thread(Increment);
 
-            var counter = new counter();
-            var ct1 = new CountingThread(counter);
-            var ct2 = new CountingThread(counter);
-
-            ct1.Run();
-            ct2.Run();
+            ct1.Start();
+            ct2.Start();
 
             ct1.Join();
             ct2.Join();
 
-            Console.WriteLine(counter.Count);
+            Console.WriteLine(_counter);
             Console.ReadKey();
-            
-
         }
 
-
-    }
-
-    class CountingThread 
-    {
-        private readonly counter _c;
-        private Thread _thread;
-
-        public CountingThread(counter c)
+        static void Increment()
         {
-            _c = c;
-        }
-
-        public void Run()
-        {
-            _thread = new Thread(DoSomeCounting);
-            _thread.Start();
-        }
-        public void Join()
-        {
-            _thread.Join();
-        }
-
-        private void DoSomeCounting()
-        {
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 100000000; i++)
             {
-                _c.increment();
+                _counter++;
             }
         }
-        
-    }
-
-    class counter
-    {
-        private int count;
-        public void increment()
-        {
-            ++count;
-        }
-
-        public int Count { get { return count; } }
     }
 }
