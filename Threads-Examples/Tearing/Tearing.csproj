@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9E4B682A-CBFD-4EB2-8D10-E48F0B9EAACE}</ProjectGuid>
+    <ProjectGuid>{E76FD770-C4D9-4974-8EFF-27F5888525AF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LoopReadHoisting</RootNamespace>
-    <AssemblyName>LoopReadHoisting</AssemblyName>
+    <RootNamespace>Tearing</RootNamespace>
+    <AssemblyName>Tearing</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

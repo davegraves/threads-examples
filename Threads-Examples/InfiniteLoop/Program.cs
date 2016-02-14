@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApplication1
@@ -20,21 +17,20 @@ namespace ConsoleApplication1
 
     class Foo
     {
-        private bool m_Done = false;
+        private bool _done;
 
         public void A()
         {
-            Task.Run(() => { m_Done = true; });
+            Task.Run(() => { _done = true; });
         }
 
         public void B()
         {
-            for (; ; )
+            while(true)
             {
-                if (m_Done)
+                if (_done)
                     break;
             }
-
             Console.WriteLine("finished...");
         }
     }

@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopReadHoisting", "LoopReadHoisting\LoopReadHoisting.csproj", "{9E4B682A-CBFD-4EB2-8D10-E48F0B9EAACE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadReordering", "ReadReordering\ReadReordering.csproj", "{DED19EE8-060E-4CD2-881B-BF0A211EA114}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadCounter", "BadCounter\BadCounter.csproj", "{5261FF31-7CB4-4A7F-A115-D0AB31A53AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfiniteLoop", "InfiniteLoop\InfiniteLoop.csproj", "{BB32D0AB-212A-4CD4-BC05-5B2A82572F5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopReadHoisting", "InfiniteLoop\LoopReadHoisting.csproj", "{BB32D0AB-212A-4CD4-BC05-5B2A82572F5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tearing", "Tearing\Tearing.csproj", "{E76FD770-C4D9-4974-8EFF-27F5888525AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E4B682A-CBFD-4EB2-8D10-E48F0B9EAACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E4B682A-CBFD-4EB2-8D10-E48F0B9EAACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E4B682A-CBFD-4EB2-8D10-E48F0B9EAACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E4B682A-CBFD-4EB2-8D10-E48F0B9EAACE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DED19EE8-060E-4CD2-881B-BF0A211EA114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DED19EE8-060E-4CD2-881B-BF0A211EA114}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DED19EE8-060E-4CD2-881B-BF0A211EA114}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DED19EE8-060E-4CD2-881B-BF0A211EA114}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5261FF31-7CB4-4A7F-A115-D0AB31A53AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5261FF31-7CB4-4A7F-A115-D0AB31A53AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5261FF31-7CB4-4A7F-A115-D0AB31A53AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +23,10 @@ Global
 		{BB32D0AB-212A-4CD4-BC05-5B2A82572F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB32D0AB-212A-4CD4-BC05-5B2A82572F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB32D0AB-212A-4CD4-BC05-5B2A82572F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76FD770-C4D9-4974-8EFF-27F5888525AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76FD770-C4D9-4974-8EFF-27F5888525AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76FD770-C4D9-4974-8EFF-27F5888525AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76FD770-C4D9-4974-8EFF-27F5888525AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
