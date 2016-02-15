@@ -17,9 +17,9 @@ namespace Tearing
             _atomicityExample = new AtomicityExample();
 
             var t1 = new Thread(Writer);
-            t1.Start();
-
             var t2 = new Thread(Reader);
+
+            t1.Start();
             t2.Start();
 
             t1.Join();
@@ -35,7 +35,7 @@ namespace Tearing
 
         private static void Writer()
         {
-            for (int i = 0; i < 1000000; i++)
+            for (int i = 0; i < 100000000; i++)
             {
                 _atomicityExample.SetValue(i % 2 == 0 ? G1 : G2);
             }
@@ -43,7 +43,7 @@ namespace Tearing
 
         private static void Reader()
         {
-            for (int i = 0; i < 1000000; i++)
+            for (int i = 0; i < 100000000; i++)
             {
                 var g = _atomicityExample.GetValue();
 

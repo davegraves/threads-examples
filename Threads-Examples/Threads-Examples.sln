@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopReadHoisting", "Infinit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tearing", "Tearing\Tearing.csproj", "{E76FD770-C4D9-4974-8EFF-27F5888525AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiningPhilosophers", "DiningPhilosophers\DiningPhilosophers.csproj", "{8126E85E-0F87-45C3-A23F-6CC841A6932B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E76FD770-C4D9-4974-8EFF-27F5888525AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E76FD770-C4D9-4974-8EFF-27F5888525AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E76FD770-C4D9-4974-8EFF-27F5888525AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8126E85E-0F87-45C3-A23F-6CC841A6932B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8126E85E-0F87-45C3-A23F-6CC841A6932B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8126E85E-0F87-45C3-A23F-6CC841A6932B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8126E85E-0F87-45C3-A23F-6CC841A6932B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
