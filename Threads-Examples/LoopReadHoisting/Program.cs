@@ -14,7 +14,7 @@ namespace ConsoleApplication1
             Console.ReadKey();
         }
     }
-
+    //http://stackoverflow.com/questions/23110762/can-this-c-sharp-code-fail-because-of-a-value-in-a-register-or-cache-never-getti
     class Foo
     {
         private bool _done;
